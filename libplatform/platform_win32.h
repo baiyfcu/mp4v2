@@ -11,6 +11,7 @@
 #   define _USE_32BIT_TIME_T
 #endif
 
+#ifdef WIN32
 #include "targetver.h"
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -72,5 +73,7 @@ namespace mp4v2 { namespace platform {
 
 // macro clashes with symbol
 #undef LC_NONE
+
+#endif
 
 #endif // MP4V2_PLATFORM_WIN32_H

@@ -1,4 +1,5 @@
 #include "libplatform/impl.h"
+#ifdef WIN32
 #include <sys/timeb.h>
 
 namespace mp4v2 { namespace platform { namespace time {
@@ -16,3 +17,5 @@ getLocalTimeMilliseconds()
 ///////////////////////////////////////////////////////////////////////////////
 
 }}} // namespace mp4v2::platform::time
+
+#endif

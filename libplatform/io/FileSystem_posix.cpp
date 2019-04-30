@@ -1,4 +1,5 @@
 #include "libplatform/impl.h"
+#ifndef WIN32
 #include <sys/stat.h>
 
 namespace mp4v2 { namespace platform { namespace io {
@@ -63,3 +64,4 @@ string FileSystem::PATH_SEPARATOR = ":";
 ///////////////////////////////////////////////////////////////////////////////
 
 }}} // namespace mp4v2::platform::io
+#endif

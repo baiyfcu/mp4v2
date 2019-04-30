@@ -1,4 +1,5 @@
 #include "libplatform/impl.h"
+#ifndef WIN32
 #include <stdlib.h>
 
 namespace mp4v2 { namespace platform { namespace number {
@@ -22,3 +23,5 @@ srandom( uint32_t seed )
 ///////////////////////////////////////////////////////////////////////////////
 
 }}} // namespace mp4v2::platform::time
+
+#endif

@@ -21,6 +21,8 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+#ifdef WIN32
+
 #include "src/impl.h"
 #include "libplatform/impl.h" /* for platform_win32_impl.h which declares Utf8ToFilename */
 #include <algorithm> /* for replace */
@@ -1090,3 +1092,5 @@ Utf8ToFilename::Utf8NumOctets ( UINT8 utf8_first_byte )
 ///////////////////////////////////////////////////////////////////////////////
 
 }}} // namespace mp4v2::platform::win32
+
+#endif

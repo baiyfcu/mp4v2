@@ -1,5 +1,6 @@
 #include "src/impl.h"
 #include "libplatform/impl.h" /* for platform_win32_impl.h which declares Utf8ToFilename */
+#ifdef WIN32
 #include <windows.h>
 
 namespace mp4v2 {
@@ -144,3 +145,4 @@ string FileSystem::PATH_SEPARATOR = ";";
 ///////////////////////////////////////////////////////////////////////////////
 
 }}} // namespace mp4v2::platform::io
+#endif
