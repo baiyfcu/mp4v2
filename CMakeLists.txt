@@ -1,6 +1,7 @@
 project(mp4v2)
 set(CMAKE_VERBOSE_MAKEFILE on)
-set(mp4v2_DIR ${CMAKE_SOURCE_DIR})
+
+set(mp4v2_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 file(GLOB mp4v2src ${mp4v2_DIR}/src/*.cpp)
 file(GLOB mp4v2src_bmff ${mp4v2_DIR}/src/bmff/*.cpp)
 file(GLOB mp4v2src_itmf ${mp4v2_DIR}/src/itmf/*.cpp)

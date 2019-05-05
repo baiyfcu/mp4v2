@@ -4660,6 +4660,16 @@ bool MP4SetTrackDurationPerChunk(
     return false;
 }
 
+uint64_t MP4GetFileSize(MP4FileHandle hFile)
+{
+    if (MP4_IS_VALID_FILE_HANDLE(hFile))
+    {
+        return ((MP4File*)hFile)->GetSize();
+    }
+    else
+        return 0;
+}
+
 ///////////////////////////////////////////////////////////////////////////////
 
 } // extern "C"

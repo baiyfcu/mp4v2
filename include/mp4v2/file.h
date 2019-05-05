@@ -358,6 +358,9 @@ MP4FileHandle MP4ReadProvider(
     const char*            fileName,
     const MP4FileProvider* fileProvider DEFAULT(NULL) );
 
+MP4V2_EXPORT
+uint64_t MP4GetFileSize(MP4FileHandle hFile);
+
 /** @} ***********************************************************************/
 
 #endif /* MP4V2_FILE_H */
